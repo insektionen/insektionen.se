@@ -1,0 +1,49 @@
+<h1>Mailinfo</h1>
+
+<p>Hur du går till väga för att lägga till ett konto eller en signatur i din mailklient varierar beroende på vad du använder, här följer information som hjälper dig få in din funktionsadress i valfri klient.</p>
+
+<p>Sektionens mailsignatur ser ut såhär, och för att den ska vara korrekt konfigurerad så ska du använda <a href="https://github.com/insektionen/presskit/blob/master/mallar/mailsignaturmall.html">HTML-koden som finns här när du lägger till signaturen i din mailklient.</a></p>
+
+<div><span style="font-size: xx-small;"><span style="color: #666666; font-family: garamond,serif; font-size: large;"><b>[<b>För och E<b>fternamn</b></b>]</b></span></span></div>
+<div><span style="color: #666666; font-family: garamond,serif;">[Post eller titel]</span></div>
+<div><span style="color: #666666; font-family: garamond,serif;">Sektionen för Informations- och Nanoteknik</span></div>
+<div><span style="font-family: garamond,serif;">[Adress]@insektionen.se</span><span style="color: #999999; font-family: garamond,serif;"> | </span><a href="http://www.insektionen.se" target="_blank" rel="noopener noreferrer"><span style="font-family: garamond,serif;">insektionen.se</span></a></div>
+<div><span style="color: #666666; font-family: garamond,serif;">[telefonnummer]<br />
+<img class="alignnone size-full wp-image-4741" src="http://insektionen.se/wp-content/uploads/2016/11/epostsignatur_IN_320px.png" alt="" width="320" height="118" srcset="http://insektionen.se/wp-content/uploads/2016/11/epostsignatur_IN_320px.png 320w, http://insektionen.se/wp-content/uploads/2016/11/epostsignatur_IN_320px-300x111.png 300w" sizes="(max-width: 320px) 100vw, 320px" /><br />
+</span></div>
+
+<p>Om din mailklient mot förmodan inte stöder HTML-signaturer så kan du ladda ner bilden genom att högerklicka på den, och välja alternativet &#8220;Spara som&#8221;.<br />
+<a href="https://github.com/insektionen/presskit/blob/master/E-postsignatur%20IN%20320px.png">Den finns också här, på github, som en del av presskitet.</a></p>
+
+<p>Vill du synkronisera funktionsmailen till din mobil eller annan valfri klient så använder du nedanstående konfigurationer:</p>
+
+<pre>SMTP-server: smtp.insektionen.se (port 587)
+
+SMTP-server (STARTTLS): smtp01.binero.se (port 465)
+
+POP3-server: pop3.insektionen.se (port 110)
+
+POP3-server (STARTTLS): pop01.binero.se (port 995)
+
+IMAP4-server: imap.insektionen.se (port 143)
+
+IMAP4-server (STARTTLS): imap01.binero.se (port 993)
+</pre>
+
+<p><b>Vid synkronisering till Android</b>:<br />
+
+Gå in på Inställningar (Settings) -&gt; Konton (Accounts &amp; Sync) välj lägg till konto (Add account).<br />
+Välj sedan Personlig(IMAP) där fyller du i funktionsmailadress och tillhörande lösenord.<br />
+Byt därefter server till imap01.binero.se samt byt Säkerhet till SSL/TLS.</p>
+
+<p>Gå vidare till nästa sida, inställningar för utgående epost.<br />
+Ändra där server till smtp01.binero.se samt säkerhet till SSL/TLS. Nu återstår enbart inställningarna för hur ofta eposten ska synkroniseras.</p>
+
+<p><b>Vid synkronisering till iPhone:</b><br />
+
+Börja med att öppna inställningar. Scrolla neråt tills du hittar alternativet &#8220;E-post, kontakter, kalendrar&#8221;, där i väljer du &#8220;Lägg till konto&#8221;. Välj sedan Annat -&gt; Lägg till e-postkonto.</p>
+
+<p>I nästa vy ska namnet som visas på utgående e-post anges i översta fältet, därunder det så anges fullständig e-postadress som du håller på att lägga till. Under det anges lösenordet till kontot.TIll sist anger du en beskrivning av kontot så att du vet vilket konto det är.</p>
+
+<p>I nästa ruta rekommenderas det att du väljer IMAP som protokoll. Utöver det så anges namn för kontot, fullständig e-postadress, kontobeskrivning samt serverinställningar. För IMAP så ska imap01.binero.se anges som server samt SSL/TLS anges för kryptering. Under användarnamn ska du ange e-postadressen som du försöker lägga till och i lösenord ska lösenordet för den adressen anges.</p>
+<p>När det kommer till inställningar för utgående epost som ställs in i nästa ruta så ska smtp01.binero.se anges som förnamn, användarnamn samt lösenord bör vara förinställda om inte så anges e-postadressen samt lösenord.</p>
