@@ -1,0 +1,43 @@
+body {
+            background-color: #F8F8F8;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .bg-1 {
+            background-color: #44687D;
+            /* Kiselblå */
+            color: #ffffff;
+        }
+
+        .bg-2 {
+            background-color: #474e5d;
+            /* Dark Blue */
+            color: #ffffff;
+        }
+
+        .bg-3 {
+            background-color: #ffffff;
+            /* White */
+            color: #555555;
+        }
+
+        .electrum-img {
+            width: 500px;
+            margin-top: 80px;
+        }
+
+        .img-responsive {
+            background: url(../img/bkpam2187204_kista_g5q0646.jpg) fixed no-repeat center;
+            height: 45em;
+            background-size: cover;
+        }
+
+        @media screen and (max-width: 510px) {
+            .electrum-img {
+                width: 100%;
+                margin-top: 20%
+            }
+            .img-responsive {
+                height: 40%;
+            }
+        }
