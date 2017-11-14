@@ -5,16 +5,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>Sektionen för Informations- och Nanoteknik</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-mod.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <style>
-
         #googleMap {
             width: 100%;
             /* Span the entire width of the screen */
@@ -22,7 +21,19 @@
             /* Set the height to 400 pixels */
         }
 
+        .main {
+            max-width: 1000px;
+        }
+
+        @media (max-width: 991px) {
+            .row {
+                max-width: 500px;
+                margin: auto;
+            }
+        }
+
     </style>
+    
 </head>
 
 <body>
@@ -50,11 +61,11 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Sektionen</a></li>
-                    <li><a href="#">För studenter</a></li>
+                    <li><a href="sektionen.html">Sektionen</a></li>
+                    <li><a href="for-studenter.html">För studenter</a></li>
                     <li><a href="kalender.html">Kalender</a></li>
-                    <li><a href="#">För Alumni</a></li>
-                    <li><a href="#">För Företag</a></li>
+                    <li><a href="for-alumni.html">För Alumni</a></li>
+                    <li><a href="for-foretag.html">För Företag</a></li>
                 </ul>
             </div>
         </div>
@@ -65,65 +76,68 @@
         <h3>Sektionen för Informations- och Nanoteknik</h3>
         <p>Sektionen för alla</p>
     </div>
-    <div class="container-fluid bg-3 text-center">
-        <h1>Vår verksamhet</h3>
+    <div class="container-fluid main">
+        <center>
+            <h1>Vår verksamhet</h1>
+        </center>
+
         <div class="row">
             <div class="col-md-4">
                 <br />
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit non erat id blandit. Morbi venenatis facilisis efficitur. Praesent leo justo, porta sed iaculis ac, porttitor vel lectus. Fusce ut ex porta, imperdiet nisl sed, varius dui. Cras consequat arcu vel tincidunt scelerisque. Suspendisse egestas in odio in sollicitudin. 
-                    </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit non erat id blandit. Morbi venenatis facilisis efficitur. Praesent leo justo, porta sed iaculis ac, porttitor vel lectus. Fusce ut ex porta, imperdiet nisl sed, varius dui. Cras consequat arcu vel tincidunt scelerisque. Suspendisse egestas in odio in sollicitudin.
+                </p>
             </div>
             <div class="col-md-8">
                 <br />
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit non erat id blandit. Morbi venenatis facilisis efficitur. Praesent leo justo, porta sed iaculis ac, porttitor vel lectus. Fusce ut ex porta, imperdiet nisl sed, varius dui. Cras consequat arcu vel tincidunt scelerisque. Suspendisse egestas in odio in sollicitudin. In tincidunt vestibulum erat, et mattis mi auctor quis. Nam velit dolor, imperdiet ut vehicula a, sodales et ante. Vivamus vehicula elit non laoreet pellentesque. Suspendisse rutrum porta fringilla. In porta auctor consequat. Vestibulum viverra sapien at sapien feugiat viverra id id ligula.
-                    </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit non erat id blandit. Morbi venenatis facilisis efficitur. Praesent leo justo, porta sed iaculis ac, porttitor vel lectus. Fusce ut ex porta, imperdiet nisl sed, varius dui. Cras consequat arcu vel tincidunt scelerisque. Suspendisse egestas in odio in sollicitudin. In tincidunt vestibulum erat, et mattis mi auctor quis. Nam velit dolor, imperdiet ut vehicula a, sodales et ante. Vivamus vehicula elit non laoreet pellentesque. Suspendisse rutrum porta fringilla. In porta auctor consequat. Vestibulum viverra sapien at sapien feugiat viverra id id ligula.
+                </p>
             </div>
         </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>Studentliv</h2>
-                    <br>
-                    <span class="glyphicon glyphicon-heart" style="font-size:15em; color: #44678D"></span>
-                    <br />
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit non erat id blandit. Morbi venenatis facilisis efficitur. Praesent leo justo, porta sed iaculis ac, porttitor vel lectus. Fusce ut ex porta, imperdiet nisl sed, varius dui. Cras consequat arcu vel tincidunt scelerisque. Suspendisse egestas in odio in sollicitudin. In tincidunt vestibulum erat, et mattis mi auctor quis. Nam velit dolor, imperdiet ut vehicula a, sodales et ante. Vivamus vehicula elit non laoreet pellentesque. Suspendisse rutrum porta fringilla. In porta auctor consequat. Vestibulum viverra sapien at sapien feugiat viverra id id ligula.
-                    </p>
-                    <div class="container-fluid">
-                        <a href="#">Mer om studentliv...</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <h2>Utbildning</h2>
-                    <br>
-                    <span class="glyphicon glyphicon-education" style="font-size:15em; color: #44678D"></span>
-                    <br />
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit non erat id blandit. Morbi venenatis facilisis efficitur. Praesent leo justo, porta sed iaculis ac, porttitor vel lectus. Fusce ut ex porta, imperdiet nisl sed, varius dui. Cras consequat arcu vel tincidunt scelerisque. Suspendisse egestas in odio in sollicitudin. In tincidunt vestibulum erat, et mattis mi auctor quis. Nam velit dolor, imperdiet ut vehicula a, sodales et ante. Vivamus vehicula elit non laoreet pellentesque. Suspendisse rutrum porta fringilla. In porta auctor consequat. Vestibulum viverra sapien at sapien feugiat viverra id id ligula.
-                    </p>
-                    <div class="container-fluid">
-                        <a href="#">Mer om utbildning...</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <h2>Näringsliv</h2>
-                    <br>
-                    <span class="glyphicon glyphicon-briefcase" style="font-size:15em; color: #44678D"></span>
-                    <br />
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit non erat id blandit. Morbi venenatis facilisis efficitur. Praesent leo justo, porta sed iaculis ac, porttitor vel lectus. Fusce ut ex porta, imperdiet nisl sed, varius dui. Cras consequat arcu vel tincidunt scelerisque. Suspendisse egestas in odio in sollicitudin. In tincidunt vestibulum erat, et mattis mi auctor quis. Nam velit dolor, imperdiet ut vehicula a, sodales et ante. Vivamus vehicula elit non laoreet pellentesque. Suspendisse rutrum porta fringilla. In porta auctor consequat. Vestibulum viverra sapien at sapien feugiat viverra id id ligula.
-                    </p>
-                    <div class="container-fluid">
-                        <a href="#">Mer om näringsliv...</a>
-                    </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h2>Studentliv</h2>
+                <br>
+                <span class="glyphicon glyphicon-heart" style="font-size:15em; color: #44678D"></span>
+                <br />
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit non erat id blandit. Morbi venenatis facilisis efficitur. Praesent leo justo, porta sed iaculis ac, porttitor vel lectus. Fusce ut ex porta, imperdiet nisl sed, varius dui. Cras consequat arcu vel tincidunt scelerisque. Suspendisse egestas in odio in sollicitudin. In tincidunt vestibulum erat, et mattis mi auctor quis. Nam velit dolor, imperdiet ut vehicula a, sodales et ante. Vivamus vehicula elit non laoreet pellentesque. Suspendisse rutrum porta fringilla. In porta auctor consequat. Vestibulum viverra sapien at sapien feugiat viverra id id ligula.
+                </p>
+                <div class="container-fluid">
+                    <a href="#">Mer om studentliv...</a>
                 </div>
             </div>
-            <br>
+            <div class="col-md-4">
+                <h2>Utbildning</h2>
+                <br>
+                <span class="glyphicon glyphicon-education" style="font-size:15em; color: #44678D"></span>
+                <br />
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit non erat id blandit. Morbi venenatis facilisis efficitur. Praesent leo justo, porta sed iaculis ac, porttitor vel lectus. Fusce ut ex porta, imperdiet nisl sed, varius dui. Cras consequat arcu vel tincidunt scelerisque. Suspendisse egestas in odio in sollicitudin. In tincidunt vestibulum erat, et mattis mi auctor quis. Nam velit dolor, imperdiet ut vehicula a, sodales et ante. Vivamus vehicula elit non laoreet pellentesque. Suspendisse rutrum porta fringilla. In porta auctor consequat. Vestibulum viverra sapien at sapien feugiat viverra id id ligula.
+                </p>
+                <div class="container-fluid">
+                    <a href="#">Mer om utbildning...</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2>Näringsliv</h2>
+                <br>
+                <span class="glyphicon glyphicon-briefcase" style="font-size:15em; color: #44678D"></span>
+                <br />
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit non erat id blandit. Morbi venenatis facilisis efficitur. Praesent leo justo, porta sed iaculis ac, porttitor vel lectus. Fusce ut ex porta, imperdiet nisl sed, varius dui. Cras consequat arcu vel tincidunt scelerisque. Suspendisse egestas in odio in sollicitudin. In tincidunt vestibulum erat, et mattis mi auctor quis. Nam velit dolor, imperdiet ut vehicula a, sodales et ante. Vivamus vehicula elit non laoreet pellentesque. Suspendisse rutrum porta fringilla. In porta auctor consequat. Vestibulum viverra sapien at sapien feugiat viverra id id ligula.
+                </p>
+                <div class="container-fluid">
+                    <a href="#">Mer om näringsliv...</a>
+                </div>
+            </div>
+        </div>
+        <br>
 
     </div>
     <br>
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center main">
         <div class="row">
             <div class="col-md-4">
                 <div class="fb-page" data-href="https://www.facebook.com/insektionen/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false">
@@ -132,7 +146,7 @@
             </div>
             <div class="col-md-4">
                 <center>
-                    <iframe src="//users.instush.com/collage-tiny/?cols=5&rows=9&bg=transparent&space=true&rd=true&grd=false&gpd=6&user_id=1096280916&username=insektionen&sid=-1&susername=-1&tag=-1&stype=mine&t=9999994Fh5GamC1ek7jfoyEiWy6jFvcZ4nsubpqZqxS6R3FsS9yLyztOX5pauVwHcmKnQP6dRBOG27XQw" allowtransparency="true" frameborder="0" scrolling="no"  style="display:block;width:100%;height:500px;border:none;overflow:visible;" ></iframe>
+                    <iframe src="//users.instush.com/collage-tiny/?cols=5&rows=9&bg=transparent&space=true&rd=true&grd=false&gpd=6&user_id=1096280916&username=insektionen&sid=-1&susername=-1&tag=-1&stype=mine&t=9999994Fh5GamC1ek7jfoyEiWy6jFvcZ4nsubpqZqxS6R3FsS9yLyztOX5pauVwHcmKnQP6dRBOG27XQw" allowtransparency="true" frameborder="0" scrolling="no" style="display:block;width:340px;;height:500px;border:none;overflow:visible;"></iframe>
                 </center>
 
             </div>
@@ -165,7 +179,7 @@
 
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPUk_yEdNQ3erC47EMLKgqCIsLTzVPr5Y&callback=myMap"></script>
-    <footer class="container-fluid bg-2 text-center" style="heigth: 200px;" height="200px">
+    <footer class="container-fluid bg-2 text-center" style="heigth: 200px;">
         <br>
         <h3>Kontaktinfo</h3>
         <br>

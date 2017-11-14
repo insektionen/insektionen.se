@@ -5,25 +5,34 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>Insektionen</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-mod.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <style>
-        
-
-        .col-md-1{
+        .col-md-1 {
             width: 14.285714285%;
+            height: 10em;
+            border: 1px lightgrey;
+            border-style: solid;
         }
-        
+
         #googleMap {
             width: 100%;
             /* Span the entire width of the screen */
             height: 400px;
             /* Set the height to 400 pixels */
+        }
+
+        @media (max-width: 767px) {
+            #g-calendar {
+                height: 500px;
+            }
         }
 
     </style>
@@ -42,20 +51,23 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Sektionen</a></li>
-                    <li><a href="#">För studenter</a></li>
+                    <li><a href="sektionen.html">Sektionen</a></li>
+                    <li><a href="for-studenter.html">För studenter</a></li>
                     <li class="active"><a href="kalender.html">Kalender</a></li>
-                    <li><a href="#">För Alumni</a></li>
-                    <li><a href="#">För Företag</a></li>
+                    <li><a href="for-alumni.html">För Alumni</a></li>
+                    <li><a href="for-foretag.html">För Företag</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container-fluid bg-2 text-center" style="box-shadow: 0px 0px 20px 1px  #000;">
-        <h3>Sektionen för Informations- och Nanoteknik</h3>
-        <p>Sektionen för alla</p>
+    <div class="container-fluid bg-2 text-center" style="box-shadow: 0px 0px 20px 1px  #000; height: 150px;">
+        <br />
+        <br />
+        <br />
+        <h1>Kalender</h1>
     </div>
+    <!--
     <div class="container-fluid bg-3 text-center kalender">
         <div class="row">
             <div class="col-xs-1 col-md-1">
@@ -76,7 +88,7 @@
             <div class="col-xs-1 col-md-1">
                 Lördag
             </div>
-            <div class="col-xs-1">
+            <div class="col-xs-1 col-md-1">
                 Söndag
             </div>
         </div>
@@ -99,7 +111,7 @@
             <div class="col-xs-1 col-md-1">
                 Lördag
             </div>
-            <div class="col-xs-1">
+            <div class="col-xs-1 col-md-1">
                 Söndag
             </div>
         </div>
@@ -122,7 +134,7 @@
             <div class="col-xs-1 col-md-1">
                 Lördag
             </div>
-            <div class="col-xs-1">
+            <div class="col-xs-1 col-md-1">
                 Söndag
             </div>
         </div>
@@ -145,7 +157,7 @@
             <div class="col-xs-1 col-md-1">
                 Lördag
             </div>
-            <div class="col-xs-1">
+            <div class="col-xs-1 col-md-1">
                 Söndag
             </div>
         </div>
@@ -168,7 +180,7 @@
             <div class="col-xs-1 col-md-1">
                 Lördag
             </div>
-            <div class="col-xs-1">
+            <div class="col-xs-1 col-md-1">
                 Söndag
             </div>
         </div>
@@ -191,16 +203,40 @@
             <div class="col-xs-1 col-md-1">
                 Lördag
             </div>
-            <div class="col-xs-1">
+            <div class="col-xs-1 col-md-1">
                 Söndag
             </div>
         </div>
     </div>
-    
+    -->
+    <iframe id="g-calendar" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showSubscribeButton=false&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=7ioqlojhso7lhast13i5kbd3i0%40group.calendar.google.com&amp;color=%236B3304&amp;ctz=Europe%2FStockholm" style="border-width:0; .container{display: none;}" width="100%" height="1000" frameborder="0" scrolling="no"></iframe>
     <br>
-    
+    <!-- You can modify loading the default CSS below and use your own CSS if you want -->
+    <link rel="stylesheet" type="text/css" href="https://zetabee.com/icaljs/res/embed.css" />
+
+    <!-- Move this div where you want to insert the calendar -->
+    <div id="icjs"></div>
+
+    <script>
+        (function() {
+
+            // Customize these as you wish
+            var pastdays = 0; // # of past days to show (0 to 30)
+            var futuredays = 60; // # of future days to show (0 to 365)
+            var cachemins = 10; // # of minutes to wait before refreshing calendar data (2 to 1440)
+            var container = "icjs"; // ID of div to embed calendar into
+
+            // Do not change anything below this
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://zetabee.com/icaljs/embed?calid=aG9zV05LTEFwUjhtRnFXMXFwM3pJZz09&offset=0&cachemins=" + cachemins + "&futuredays=" + futuredays + "&pastdays=" + pastdays + "&container=" + container;
+            (document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(s);
+        })();
+
+    </script>
     <br>
-    
+
     <!-- Add Google Maps -->
     <div id="googleMap"></div>
     <script>
@@ -222,30 +258,38 @@
 
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPUk_yEdNQ3erC47EMLKgqCIsLTzVPr5Y&callback=myMap"></script>
-    
+
     <footer class="container-fluid bg-2 text-center" style="heigth: 200px;" height="200px">
         <br>
         <h3>Kontaktinfo</h3>
         <br>
-        <div class="col-sm-6">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <br>
             <p>
                 Sektionen för Informations- och Nanoteknik <br> Electrum 210 <br> 164 40 Kista
             </p>
             <p>
-                Besöksadress: Electrum, Kistagången 16, Kista <br> Leveranser: Isafjordsgatan 18, Kista
+                <b>Besöksadress:</b> Electrum, Kistagången 16, Kista <br>
+                <b>Leveranser:</b> Isafjordsgatan 18, Kista
             </p>
+            <br>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-3">
             <p>
-                Ordförande: Patrik Karlstén <br> E-post: <a href="mailto:ordf@insektionen.se">ordf@insektionen.se</a>
+                <b>Ordförande:</b> Patrik Karlstén <br>
+                <b>E-post:</b> <a href="mailto:ordf@insektionen.se">ordf@insektionen.se</a>
             </p>
             <p>
-                Kommunikationsansvarig: Erik Pettersson <br> E-post: <a href="mailto:kommunikation@insektionen.se">kommunikation@insektionen.se</a>
+                <b>Kommunikationsansvarig:</b> Erik Pettersson <br> E-post: <a href="mailto:kommunikation@insektionen.se">kommunikation@insektionen.se</a>
             </p>
             <p>
-                Näringslivsansvarig: Celine Mileikowsky <br> E-post: <a href="mailto:naringsliv@insektionen.se">naringsliv@insektionen.se</a>
+                <b>Näringslivsansvarig:</b> Celine Mileikowsky <br>
+                <b>E-post:</b> <a href="mailto:naringsliv@insektionen.se">naringsliv@insektionen.se</a>
             </p>
+            <br>
         </div>
+        <div class="col-sm-3"></div>
         <br>
         <br>
 

@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>Sektionen för Informations- och Nanoteknik</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-mod.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <style>
         #googleMap {
@@ -20,7 +20,16 @@
             height: 400px;
             /* Set the height to 400 pixels */
         }
-
+        h2{
+            text-align: center;
+        }
+        @media screen and (max-width: 991px) {
+            .col{
+                text-align: center;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
     </style>
 </head>
 
@@ -35,7 +44,6 @@
             js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10';
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
-
     </script>
     <nav class="navbar navbar-in navbar-fixed-top" style="box-shadow: 0px 0px 20px 1px  #000;">
         <div class="container-fluid">
@@ -49,11 +57,11 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">Sektionen</a></li>
-                    <li><a href="#">För studenter</a></li>
+                    <li><a href="sektionen.html">Sektionen</a></li>
+                    <li><a href="for-studenter.html">För studenter</a></li>
                     <li><a href="kalender.html">Kalender</a></li>
-                    <li><a href="#">För Alumni</a></li>
-                    <li class="active"><a href="#">För Företag</a></li>
+                    <li><a href="for-alumni.html">För Alumni</a></li>
+                    <li class="active"><a href="for-foretag.html">För Företag</a></li>
                 </ul>
             </div>
         </div>
@@ -65,73 +73,87 @@
         <br>
         <h1>För företag</h1>
     </div>
-    <div class="container text-center">
-        <div class="container text-center" style="max-width: 70%;">
+    <div class="container-fluid bg-3">
+        <div class="container" style="max-width: 980px;">
             <br>
-            <p>
-            <b>Sektionen för Informations- och Nanoteknik</b> representerar alla KTH-studenter i Kista. Den nämnd i sektionen som är ansvarig för alla näringslivskontakter är <b>Näringslivsnämnden</b>. De arrangerar mailkontakt med studenter, promotionsmöjligheter, föreläsningar, och mycket mer tillsammans med företag.
-        </p>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="img/naringsliv_transparent.png" style="max-width: 400px;" />
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-6">
+                    <p>
+                        <b>Sektionen för Informations- och Nanoteknik</b> representerar alla KTH-studenter i Kista. Den nämnd i sektionen som är ansvarig för alla näringslivskontakter är <b>Näringslivsnämnden</b>. De arrangerar mailkontakt med studenter, promotionsmöjligheter, föreläsningar, och mycket mer tillsammans med företag.
+                    </p>
 
-        <p>
-            Vill ert företag komma i kontakt med studenter? Sektionens Näringslivsnämnd arbetar aktivt för ett ökat samarbete mellan IT-studenter och näringslivet. De hjälper er att anordna event där studenter kan komma i kontakt med er och ert företag, för att få en inblick i det framtida arbetslivet.
-        </p>
-        <p>
-            Om ni t.ex. vill rekrytera eller göra reklam finns det många sätt att göra det, exempelvis via mailutskick, lunchföreläsningar, reklam och annonsering i sektionens olika digitala och fysiska kanaler, eller varför inte på en pub? Nedan listar vi våra vanligaste kontaktvägar/eventtyper, men vi tar gärna fram nya idéer tillsammans med er.
-        </p>
-        <p>
-            Hör gärna av er till Näringslivsnämnden för mer information: <a href="mailto:naringsliv@insektionen.se">naringsliv@insektionen.se</a>
-        </p>
+                    <p>
+                        Vill ert företag komma i kontakt med studenter? Sektionens Näringslivsnämnd arbetar aktivt för ett ökat samarbete mellan IT-studenter och näringslivet. De hjälper er att anordna event där studenter kan komma i kontakt med er och ert företag, för att få en inblick i det framtida arbetslivet.
+                    </p>
+                    <p>
+                        Om ni t.ex. vill rekrytera eller göra reklam finns det många sätt att göra det, exempelvis via mailutskick, lunchföreläsningar, reklam och annonsering i sektionens olika digitala och fysiska kanaler, eller varför inte på en pub? Nedan listar vi våra vanligaste kontaktvägar/eventtyper, men vi tar gärna fram nya idéer tillsammans med er.
+                    </p>
+                    <p>
+                        Hör gärna av er till Näringslivsnämnden för mer information: <a href="mailto:naringsliv@insektionen.se">naringsliv@insektionen.se</a>
+                    </p>
+                </div>
+            </div>
+
+
+
+
         </div>
-        
-        
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Kista Arbetsmarknadsdag &#8211; KAM</h2>
 
-                <p>
-                    Under Kista Arbetsmarknadsdag får företag en unik möjlighet att möta sin framtida arbetskraft.<br /> För mer information gå in på arbetsmarknadsdagens egna hemsida: <a href="http://kam.insektionen.se">Kista Arbetsmarknadsdag</a>.
-                </p>
-            </div>
-            <div class="col-md-4">
-                <h2>Mailutskick</h2>
+        <div class="container-fluid" style="max-width: 900px;">
 
-                <p>
-                    Nå alla studenter på KTH Kistas program, eller fokusera på en specifik årskurs eller program.<br /> Med ett mailutskick når ni studenterna direkt, och får största möjliga spridning på minsta möjliga tid.
-                </p>
-            </div>
-            <div class="col-md-4">
-                <h2 id="pub">Pubar</h2>
+            <div class="row">
+                <div class="col-md-4 col">
+                    <h2 style="font-size: 1.5em;">Kista Arbetsmarknadsdag &#8211; KAM</h2>
 
-                <p>
-                    Ta chansen och presentera ert företag på någon av våra populära tisdags- och torsdagspubar. Hit går studenter för att ta någonting äta och dricka efter skoldagens slut. Det är en bra möjlighet för att mingla med studenter i en mer avslappnad miljö och presentera ert företag, det finns även möjlighet att hålla en föreläsning innan. SJälvklart ser vi till att annonsera detta ordentligt i alla sektionens kanaler.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <h2 id="lunchföreläsning">Lunchföreläsningar</h2>
+                    <p>
+                        Under Kista Arbetsmarknadsdag får företag en unik möjlighet att möta sin framtida arbetskraft.<br /> För mer information gå in på arbetsmarknadsdagens egna hemsida: <a href="http://kam.insektionen.se">Kista Arbetsmarknadsdag</a>.
+                    </p>
+                </div>
+                <div class="col-md-4 col">
+                    <h2>Mailutskick</h2>
 
-                <p>
-                    Lunchföreläsningar är mycket uppskattade av studenter. Ni håller en presentation under lunchen (kl. 12:15-13:00) för cirka 60 studenter samtidigt som de äter en enklare lunch som ingår i priset för eventet. Vad ni vill prata om på föreläsningen är helt upp till er och ni kan även välja vilken typ av mat som serveras. På lunchföreläsningen kan ni exempelvis presentera företaget, projekt eller något specifik del av er verksamhet.
-                </p>
-            </div>
-            <div class="col-md-4">
-                <h2 id="affischering">Affischering</h2>
+                    <p>
+                        Nå alla studenter på KTH Kistas program, eller fokusera på en specifik årskurs eller program.<br /> Med ett mailutskick når ni studenterna direkt, och får största möjliga spridning på minsta möjliga tid.
+                    </p>
+                </div>
+                <div class="col-md-4 col">
+                    <h2 id="affischering">Affischering</h2>
 
-                <p>
-                    Vi trycker och sätter upp affischer i KTHs campus Kista, det finns även möjlighet att visa reklambilder på de 70&#8243; TV-skärmar som finns i vår sektionslokal. Bilderna blir del av ett rullande bildspel, som visas minst 8:00 &#8211; 17:00 varje vardag.
-                </p>
-            </div>
-            <div class="col-md-4">
-                <h2 id="reklam">Reklam och sponsring</h2>
+                    <p>
+                        Vi trycker och sätter upp affischer i KTHs campus Kista, det finns även möjlighet att visa reklambilder på de 70&#8243; TV-skärmar som finns i vår sektionslokal. Bilderna blir del av ett rullande bildspel, som visas minst 8:00 &#8211; 17:00 varje vardag.
+                    </p>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-md-4 col">
+                    <h2 id="lunchföreläsning">Lunchföreläsningar</h2>
 
-                <p>
-                    Vill ni ha chansen att få göra studenterna lite gladare och samtidigt göra reklam? Sponsra då sektionen med en rolig eller användbar pryl, eller varför inte göra något helt nytt och annorlunda? Det är bara er fantasi som sätter gränser för vad som kan åstadkommas.
-                </p>
-                <p>
-                    Om ni har en annan idé om hur ni vill nå våra studenter kan ni självklart föreslå detta.<br /> För bokning och frågor bör ni vända er till ordförande för Näringslivsnämnden på <a href="mailto:naringsliv@insektionen.se">naringsliv@insektionen.se</a>.
-                </p>
+                    <p>
+                        Lunchföreläsningar är mycket uppskattade av studenter. Ni håller en presentation under lunchen (kl. 12:15-13:00) för cirka 60 studenter samtidigt som de äter en enklare lunch som ingår i priset för eventet. Vad ni vill prata om på föreläsningen är helt upp till er och ni kan även välja vilken typ av mat som serveras. På lunchföreläsningen kan ni exempelvis presentera företaget, projekt eller något specifik del av er verksamhet.
+                    </p>
+                </div>
+                <div class="col-md-4 col">
+                    <h2 id="pub">Pubar</h2>
 
+                    <p>
+                        Ta chansen och presentera ert företag på någon av våra populära tisdags- och torsdagspubar. Hit går studenter för att ta någonting äta och dricka efter skoldagens slut. Det är en bra möjlighet för att mingla med studenter i en mer avslappnad miljö och presentera ert företag, det finns även möjlighet att hålla en föreläsning innan. SJälvklart ser vi till att annonsera detta ordentligt i alla sektionens kanaler.
+                    </p>
+                </div>
+                <div class="col-md-4 col">
+                    <h2 id="reklam">Reklam och sponsring</h2>
+
+                    <p>
+                        Vill ni ha chansen att få göra studenterna lite gladare och samtidigt göra reklam? Sponsra då sektionen med en rolig eller användbar pryl, eller varför inte göra något helt nytt och annorlunda? Det är bara er fantasi som sätter gränser för vad som kan åstadkommas.
+                    </p>
+                    <p>
+                        Om ni har en annan idé om hur ni vill nå våra studenter kan ni självklart föreslå detta.<br /> För bokning och frågor bör ni vända er till ordförande för Näringslivsnämnden på <a href="mailto:naringsliv@insektionen.se">naringsliv@insektionen.se</a>.
+                    </p>
+
+                </div>
             </div>
         </div>
     </div>
@@ -153,7 +175,6 @@
             });
             marker.setMap(map);
         }
-
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPUk_yEdNQ3erC47EMLKgqCIsLTzVPr5Y&callback=myMap"></script>
     <footer class="container-fluid bg-2 text-center" style="heigth: 200px;" height="200px">

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Sektionen för Informations- och Nanoteknik</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-mod.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <style>
+        #googleMap {
+            width: 100%;
+            /* Span the entire width of the screen */
+            height: 400px;
+            /* Set the height to 400 pixels */
+        }
+
+        #main h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <nav class="navbar navbar-in navbar-fixed-top" style="box-shadow: 0px 0px 20px 1px  #000;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="index.html"><img src="img/Logo%20IN%20Monokrom%20Svart.png" height="25px"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="sektionen.html">Sektionen</a></li>
+                    <li><a href="for-studenter.html">För studenter</a></li>
+                    <li><a href="kalender.html">Kalender</a></li>
+                    <li class="active"><a href="#">För Alumni</a></li>
+                    <li><a href="for-foretag.html">För Företag</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-2 text-center" style="box-shadow: 0px 0px 20px 1px  #000; height: 150px;">
+        <br />
+        <br />
+        <br />
+        <h1>För Alumni</h1>
+    </div>
+    <div id="main" class="container" style="min-height: 400px;">
+        <br>
+        <br>
+        <br />
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+             <p>
+            Sektionen för Informations- och Nanoteknik bedriver alumniverksamhet med många trevliga och roliga evenemang varje år. Som alumn i sektionen får man tillfälle att återigen uppleva det studiesociala livet, att träffa gamla kursare så väl som nuvarande studenter. Som alumn hålls du uppdaterad om händelser som rör sektionen och kåren i övrigt.
+        </p>
+        </div>
+        <div class="col-md-6">
+            <p>
+            För att bli alumn på IN-sektionen krävs inte mycket. Allt du behöver göra är att klicka <a href="https://alumni.admin.kth.se/Portal/Public/Default.aspx">här</a> och registrera dig för <b>KTH Alumni Community</b> och sedan ansöka om att gå med i gruppen &#8220;KTH Kista&#8221;. Du kommer då få nyhetsbrev och inbjudningar till alla våra event. Du kan även genom community hitta gamla kursare och få information om alumniaktiviteter på KTH i allmänhet. Det är även fritt fram för blivande alumner och studenter att gå med för att hänga med i de evenemang som arrangeras.
+        </p>
+        </div>
+        <div class="col-sm-12" style="text-align: center">
+            <p>
+            Vid frågor angående alumni vänligen vänd dig till <a href="mailto:alumni@insektionen.se">alumniansvarig</a>.<a href="mailto:alumni@insektionen.se"></a><br />
+        </p>
+        </div>
+       
+    </div>
+    <!-- Add Google Maps -->
+    <div id="googleMap"></div>
+    <script>
+        function myMap() {
+            var myCenter = new google.maps.LatLng(59.404931, 17.950892);
+            var mapProp = {
+                center: myCenter,
+                zoom: 15,
+                scrollwheel: false,
+                draggable: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            var marker = new google.maps.Marker({
+                position: myCenter
+            });
+            marker.setMap(map);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPUk_yEdNQ3erC47EMLKgqCIsLTzVPr5Y&callback=myMap"></script>
+    <footer class="container-fluid bg-2 text-center" style="heigth: 200px;" height="200px">
+        <br>
+        <h3>Kontaktinfo</h3>
+        <br>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <br>
+            <p>
+                Sektionen för Informations- och Nanoteknik <br> Electrum 210 <br> 164 40 Kista
+            </p>
+            <p>
+                <b>Besöksadress:</b> Electrum, Kistagången 16, Kista <br>
+                <b>Leveranser:</b> Isafjordsgatan 18, Kista
+            </p>
+            <br>
+        </div>
+        <div class="col-sm-3">
+            <p>
+                <b>Ordförande:</b> Patrik Karlstén <br>
+                <b>E-post:</b> <a href="mailto:ordf@insektionen.se">ordf@insektionen.se</a>
+            </p>
+            <p>
+                <b>Kommunikationsansvarig:</b> Erik Pettersson <br> E-post: <a href="mailto:kommunikation@insektionen.se">kommunikation@insektionen.se</a>
+            </p>
+            <p>
+                <b>Näringslivsansvarig:</b> Celine Mileikowsky <br>
+                <b>E-post:</b> <a href="mailto:naringsliv@insektionen.se">naringsliv@insektionen.se</a>
+            </p>
+            <br>
+        </div>
+        <div class="col-sm-3"></div>
+        <br>
+        <br>
+
+    </footer>
+</body>
+
+</html>
